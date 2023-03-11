@@ -1,4 +1,22 @@
 # Ultra-Fast-Lane-Detection
+my own understanding:
+if we slice a picture into those several rows, and columns, then lanes will lays in those blocks, which will be green.
+
+![image](https://user-images.githubusercontent.com/97998419/224511454-5760642f-a20f-4bd5-ac1c-8ed0ac98b24e.png)
+
+so we label the green blocks as 1, and rest as 0.
+
+![image (1)](https://user-images.githubusercontent.com/97998419/224511495-17f3fbb0-9d24-4614-92e2-8fa9e3ba7166.png)
+
+so a picture will looks like this: 
+![image (2)](https://user-images.githubusercontent.com/97998419/224511516-620d5da3-4b28-4644-ab52-14114d195933.png)
+
+we will consider each lane as a rows*2 column, first columns indicating which rows we are in, and second columsn indicating which block the lane lays in:
+
+![image (3)](https://user-images.githubusercontent.com/97998419/224511537-3296c6b6-8643-4758-bb9f-fdc184e234c2.png)
+
+
+
 PyTorch implementation of the paper "[Ultra Fast Structure-aware Deep Lane Detection](https://arxiv.org/abs/2004.11757)".
 
 **\[July 18, 2022\] Updates: The new version of our method has been accepted by TPAMI 2022. Code is available [here](https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2)**.
