@@ -1,5 +1,8 @@
 # Ultra-Fast-Lane-Detection
-my own understanding:
+
+Some my own understanding after reading the paper and run for several demos:
+
+
 if we slice a picture into those several rows, and columns, then lanes will lays in those blocks, which will be green.
 
 ![image](https://user-images.githubusercontent.com/97998419/224511454-5760642f-a20f-4bd5-ac1c-8ed0ac98b24e.png)
